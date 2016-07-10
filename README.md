@@ -3,7 +3,38 @@
 Implements the [Atbash Cipher](http://www.practicalcryptography.com/ciphers/classical-era/atbash-cipher/) in
 Elixir.
 
-This project was written for learning purposes; the Atbash cipher offers almost no security.
+This project was written for learning purposes. Don't use the Atbash cipher; it
+offers almost no security.
+
+### Installation
+
+```sh
+$ git clone https://github.com/jwworth/atbash
+$ cd atbash
+$ iex -S mix
+```
+
+### Usage
+
+Encryption:
+
+```elixir
+iex(0)> Atbash.Decryptor.decrypt("OPERATION WARRIOR COWBELL")
+"LKVIZGRLM DZIIRLI XLDYVOO"
+```
+
+Decryption:
+
+```elixir
+iex(0)> Atbash.Decryptor.decrypt("LKVIZGRLM ILNZM ZOTVYIZ")
+"OPERATION ROMAN ALGEBRA"
+```
+
+### Tests
+
+```sh
+$ mix test
+```
 
 ### License
 
