@@ -1,0 +1,2 @@
+defmodule Atbash do
+end
