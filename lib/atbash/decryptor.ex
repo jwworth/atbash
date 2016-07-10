@@ -10,8 +10,8 @@ defmodule Atbash.Decryptor do
 
   ## Examples
 
-      iex> Atbash.Decryptor.decrypt("ZGGZXP ZG WZDM")
-      "ATTACK AT DAWN"
+      iex> Atbash.Decryptor.decrypt("ZGGZXP ZG WZDM!")
+      "ATTACK AT DAWN!"
 
       iex> Atbash.Decryptor.decrypt("")
       ""

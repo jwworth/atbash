@@ -8,8 +8,8 @@ defmodule Atbash.Encryptor do
 
   ## Examples
 
-      iex> Atbash.Encryptor.encrypt("ATTACK AT DAWN")
-      "ZGGZXP ZG WZDM"
+      iex> Atbash.Encryptor.encrypt("ATTACK AT DAWN!")
+      "ZGGZXP ZG WZDM!"
 
       iex> Atbash.Encryptor.encrypt("")
       ""
@@ -28,7 +28,7 @@ defmodule Atbash.Encryptor do
       "J", R: "I", S: "H", T: "G", U: "F", V: "E", W: "D", X: "C", Y: "B", Z:
       "A" ]
 
-    encoded = atbash_map[String.to_atom(h)] || " "
+    encoded = atbash_map[String.to_atom(h)] || h
 
     encrypt(t, list ++ [encoded])
   end
