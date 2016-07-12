@@ -33,7 +33,7 @@ defmodule Atbash.Encryptor do
       "r", j: "q", k: "p", l: "o", m: "n", n: "m", o: "l", p: "k", q: "j", r:
       "i", s: "h", t: "g", u: "f", v: "e", w: "d", x: "c", y: "b", z: "a" ]
 
-    encoded = atbash_map[String.to_atom(h)] || h
+    encoded = Access.get(atbash_map, String.to_atom(h), h)
 
     encrypt(t, list ++ [encoded])
   end
