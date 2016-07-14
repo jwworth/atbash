@@ -19,14 +19,14 @@ $ iex -S mix
 Encryption:
 
 ```elixir
-iex(0)> Atbash.Encryptor.encrypt("OPERATION WARRIOR COWBELL")
+iex> Atbash.Encryptor.encrypt("OPERATION WARRIOR COWBELL")
 "LKVIZGRLM DZIIRLI XLDYVOO"
 ```
 
 Decryption:
 
 ```elixir
-iex(0)> Atbash.Decryptor.decrypt("LKVIZGRLM ILNZM ZOTVYIZ")
+iex> Atbash.Decryptor.decrypt("LKVIZGRLM ILNZM ZOTVYIZ")
 "OPERATION ROMAN ALGEBRA"
 ```
 
