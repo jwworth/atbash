@@ -15,6 +15,7 @@ defmodule Atbash.Decryptor do
 
       iex> Atbash.Decryptor.decrypt("")
       ""
+
   """
   def decrypt(string) do
     encrypt(string)
